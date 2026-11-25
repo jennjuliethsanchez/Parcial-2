@@ -40,8 +40,9 @@ class GastosViewModel : ViewModel() {
             try {
                 val trips = api.getTrips()
                 _state.update { it.copy(trips = trips, loading = false) }
-            } catch (e: Exception) {
-                _state.update { it.copy(loading = false, error = sinConexion) }
+            }  catch (e: Exception) {
+            android.util.Log.e("API", "Error al cargar viajes", e)
+            _state.update { it.copy(loading = false, error = "${e.javaClass.simpleName}: ${e.message}") }
             }
         }
     }
