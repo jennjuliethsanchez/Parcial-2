@@ -4,7 +4,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object Clienta {
-    // 10.0.2.2 = el localhost de tu PC visto desde el emulador
     private const val BASE_URL = "http://10.0.2.2:3000/"
 
     val api: ApiService by lazy {

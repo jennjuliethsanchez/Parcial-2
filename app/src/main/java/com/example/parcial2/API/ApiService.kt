@@ -33,5 +33,4 @@ interface ApiService {
     suspend fun getCategories(): List<Category>
 }
 
-// El backend responde { "message": "..." } cuando hay error
 data class ApiError(val message: String?)
