@@ -1,4 +1,4 @@
-package com.example.parcial2.ui.theme
+package com.example.parcial2.theme
 
 import androidx.compose.ui.graphics.Color
 
